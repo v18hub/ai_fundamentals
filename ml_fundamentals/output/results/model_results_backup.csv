@@ -1,0 +1,52 @@
+task,category,variant,model_class,params,fit_time_sec,r2,mae,rmse,accuracy,f1_macro,precision_macro,recall_macro,roc_auc
+linear,plain,linear_regression_plain,LinearRegression,{},0.9138,0.910588710512521,5.318176216703804,6.115563946889853,,,,,
+logistic_binary,plain,logistic_regression_plain,LogisticRegression,{},1.4484,,,,0.892871055707051,0.8569009065256876,0.8776908507064456,0.8412346336221769,0.9353571227680733
+logistic_multiclass,plain,logistic_regression_plain,LogisticRegression,{},20.0925,,,,0.8031749123490456,0.7074751665114525,0.735032755561696,0.6932054349254672,
+linear,regularization,ridge_alpha_0.01,Ridge,{'alpha': 0.01},0.0604,0.9105886990545452,5.318176609697001,6.115564338741833,,,,,
+linear,regularization,lasso_alpha_0.01,Lasso,{'alpha': 0.01},1.1342,0.9105803708946937,5.319579934067811,6.115849147322618,,,,,
+linear,regularization,elasticnet_alpha_0.01,ElasticNet,"{'alpha': 0.01, 'l1_ratio': 0.5}",2.0996,0.9097653513405165,5.339210661182045,6.143657527949816,,,,,
+linear,regularization,ridge_alpha_0.1,Ridge,{'alpha': 0.1},0.1554,0.9105885957898244,5.318180146380614,6.115567870296875,,,,,
+linear,regularization,lasso_alpha_0.1,Lasso,{'alpha': 0.1},0.4164,0.9077224809822193,5.378780749603069,6.212813076678528,,,,,
+linear,regularization,elasticnet_alpha_0.1,ElasticNet,"{'alpha': 0.1, 'l1_ratio': 0.5}",0.3162,0.8947417292638141,5.62659447658806,6.63542046574411,,,,,
+linear,regularization,ridge_alpha_1.0,Ridge,{'alpha': 1.0},0.153,0.9105875490143924,5.318215487979932,6.115603668903998,,,,,
+linear,regularization,lasso_alpha_1.0,Lasso,{'alpha': 1.0},0.668,0.864826541443289,6.147980131473962,7.519449473322657,,,,,
+linear,regularization,elasticnet_alpha_1.0,ElasticNet,"{'alpha': 1.0, 'l1_ratio': 0.5}",0.4212,0.7871793485282681,7.444941868234776,9.435115407338122,,,,,
+linear,regularization,ridge_alpha_10.0,Ridge,{'alpha': 10.0},0.3617,0.9105756908565732,5.318604103418348,6.11600919066509,,,,,
+linear,regularization,lasso_alpha_10.0,Lasso,{'alpha': 10.0},0.1393,0.15186893985705485,13.938185948872492,18.83526854781189,,,,,
+linear,regularization,elasticnet_alpha_10.0,ElasticNet,"{'alpha': 10.0, 'l1_ratio': 0.5}",0.1434,0.22896797904818622,13.320665215747464,17.958767992317824,,,,,
+logistic_binary,regularization,ridge_l2_C_0.01,LogisticRegression,"{'C': 0.01, 'l1_ratio': 0.0, 'solver': 'saga'}",56.7425,,,,0.8890728476821192,0.8505123990934101,0.875613560397781,0.8325438605138721,0.933546172537963
+logistic_binary,regularization,lasso_l1_C_0.01,LogisticRegression,"{'C': 0.01, 'l1_ratio': 1.0, 'solver': 'saga'}",53.097,,,,0.8873198285936892,0.8480283655032071,0.873395874318322,0.8299659565518851,0.9338493103843535
+logistic_binary,regularization,elasticnet_C_0.01,LogisticRegression,"{'C': 0.01, 'l1_ratio': 0.5, 'solver': 'saga'}",65.8089,,,,0.8876119984417609,0.8484426571033779,0.8737659599452361,0.8303956072122163,0.9340043344894421
+logistic_binary,regularization,ridge_l2_C_0.1,LogisticRegression,"{'C': 0.1, 'l1_ratio': 0.0, 'solver': 'saga'}",100.4168,,,,0.8920919361121932,0.8557094932434626,0.8769775324392632,0.839782200797195,0.9350860238810574
+logistic_binary,regularization,lasso_l1_C_0.1,LogisticRegression,"{'C': 0.1, 'l1_ratio': 1.0, 'solver': 'saga'}",118.0802,,,,0.8930658356057655,0.8568993970724085,0.8786479978550288,0.8406776486361262,0.9355805739719166
+logistic_binary,regularization,elasticnet_C_0.1,LogisticRegression,"{'C': 0.1, 'l1_ratio': 0.5, 'solver': 'saga'}",93.2319,,,,0.8926762758083365,0.8564532952346446,0.8779007537925672,0.8404114788197834,0.9354496636537482
+logistic_binary,regularization,ridge_l2_C_1.0,LogisticRegression,"{'C': 1.0, 'l1_ratio': 0.0, 'solver': 'saga'}",100.9981,,,,0.8934553954031944,0.8577185595816559,0.8784179353404037,0.8420939349428392,0.9352891789115414
+logistic_binary,regularization,lasso_l1_C_1.0,LogisticRegression,"{'C': 1.0, 'l1_ratio': 1.0, 'solver': 'saga'}",114.1998,,,,0.8930658356057655,0.857161086695641,0.8779654529610723,0.8414827301793852,0.9354276761326087
+logistic_binary,regularization,elasticnet_C_1.0,LogisticRegression,"{'C': 1.0, 'l1_ratio': 0.5, 'solver': 'saga'}",125.5064,,,,0.8931632255551227,0.8573097881732397,0.8780544803840213,0.8416642842825081,0.9353353768680455
+logistic_binary,regularization,ridge_l2_C_10.0,LogisticRegression,"{'C': 10.0, 'l1_ratio': 0.0, 'solver': 'saga'}",97.4594,,,,0.8932606155044799,0.857458447259136,0.8781434955525145,0.8418458383856308,0.9353151773431304
+logistic_binary,regularization,lasso_l1_C_10.0,LogisticRegression,"{'C': 10.0, 'l1_ratio': 1.0, 'solver': 'saga'}",104.0479,,,,0.8931632255551227,0.8573469855592519,0.877958139835388,0.8417792959315451,0.9353229575429183
+logistic_binary,regularization,elasticnet_C_10.0,LogisticRegression,"{'C': 10.0, 'l1_ratio': 0.5, 'solver': 'saga'}",118.33,,,,0.8931632255551227,0.8573469855592519,0.877958139835388,0.8417792959315451,0.9353183184175791
+logistic_multiclass,regularization,ridge_l2_C_0.01,LogisticRegression,"{'C': 0.01, 'l1_ratio': 0.0, 'solver': 'saga'}",92.2086,,,,0.7915855083755357,0.6731407838167347,0.7260099096159276,0.6539870667471748,
+logistic_multiclass,regularization,lasso_l1_C_0.01,LogisticRegression,"{'C': 0.01, 'l1_ratio': 1.0, 'solver': 'saga'}",211.6562,,,,0.7937280872613947,0.6748083093516692,0.7289172822617356,0.6582302649567068,
+logistic_multiclass,regularization,elasticnet_C_0.01,LogisticRegression,"{'C': 0.01, 'l1_ratio': 0.5, 'solver': 'saga'}",149.2592,,,,0.7941176470588235,0.6759222104902065,0.733543621739607,0.6566320012885929,
+logistic_multiclass,regularization,ridge_l2_C_0.1,LogisticRegression,"{'C': 0.1, 'l1_ratio': 0.0, 'solver': 'saga'}",246.2611,,,,0.8002532138683288,0.6996298476674592,0.7325777346715552,0.6838151367357044,
+logistic_multiclass,regularization,lasso_l1_C_0.1,LogisticRegression,"{'C': 0.1, 'l1_ratio': 1.0, 'solver': 'saga'}",425.5045,,,,0.8015192832099727,0.7016942158573184,0.7327793748203633,0.6868892436159315,
+logistic_multiclass,regularization,elasticnet_C_0.1,LogisticRegression,"{'C': 0.1, 'l1_ratio': 0.5, 'solver': 'saga'}",386.2312,,,,0.801227113361901,0.7007213346073023,0.7329496485659792,0.6852295348396806,
+logistic_multiclass,regularization,ridge_l2_C_1.0,LogisticRegression,"{'C': 1.0, 'l1_ratio': 0.0, 'solver': 'saga'}",417.6833,,,,0.8031749123490456,0.70698521922808,0.7357693454384131,0.6922104320766727,
+logistic_multiclass,regularization,lasso_l1_C_1.0,LogisticRegression,"{'C': 1.0, 'l1_ratio': 1.0, 'solver': 'saga'}",581.2432,,,,0.8029801324503312,0.7072053893081685,0.735814780184464,0.6922942003290086,
+logistic_multiclass,regularization,elasticnet_C_1.0,LogisticRegression,"{'C': 1.0, 'l1_ratio': 0.5, 'solver': 'saga'}",578.3285,,,,0.8029801324503312,0.7068740797671903,0.7356067221828493,0.6918809982674249,
+logistic_multiclass,regularization,ridge_l2_C_10.0,LogisticRegression,"{'C': 10.0, 'l1_ratio': 0.0, 'solver': 'saga'}",412.0087,,,,0.8030775223996883,0.7073440868587433,0.7354241473415939,0.6926955378675866,
+logistic_multiclass,regularization,lasso_l1_C_10.0,LogisticRegression,"{'C': 10.0, 'l1_ratio': 1.0, 'solver': 'saga'}",584.4002,,,,0.8030775223996883,0.70741424802261,0.7353916600505316,0.6928191071884703,
+logistic_multiclass,regularization,elasticnet_C_10.0,LogisticRegression,"{'C': 10.0, 'l1_ratio': 0.5, 'solver': 'saga'}",601.9445,,,,0.8031749123490456,0.7075283047486938,0.7355986136798534,0.6928582982842534,
+linear,optimizer,linear_gradient_descent,SGDRegressor,{'optimizer': 'gradient_descent'},0.221,-3.330124729147977e+21,158096562838.06372,1180240688224.529,,,,,
+linear,optimizer,linear_momentum,MLPRegressor,{'optimizer': 'momentum'},1.381,-1.1744589963609267e+22,111280174549.6499,2216456753772.839,,,,,
+linear,optimizer,linear_adam,MLPRegressor,{'optimizer': 'adam'},19.5223,0.9100728457434298,5.3251341402419,6.133180662939268,,,,,
+linear,optimizer,linear_saga,SGDRegressor,{'optimizer': 'saga'},1.7518,-5.47318460537321e+21,119015960186.6526,1513074739647.6472,,,,,
+logistic_binary,optimizer,logistic_gradient_descent,SGDClassifier,{'optimizer': 'gradient_descent'},0.2421,,,,0.8875146084924036,0.851001323136956,0.8672903592515688,0.8381498568926482,0.9296349066347029
+logistic_binary,optimizer,logistic_momentum,MLPClassifier,{'optimizer': 'momentum'},4.4441,,,,0.8916049863654071,0.8546966334232234,0.8772178921618979,0.8380693487383222,0.9346555033847253
+logistic_binary,optimizer,logistic_adam,MLPClassifier,{'optimizer': 'adam'},4.185,,,,0.8915075964160498,0.8575374259443338,0.8699732234809474,0.8472037382071984,0.9337073096571706
+logistic_binary,optimizer,logistic_saga,LogisticRegression,{'optimizer': 'saga'},141.2694,,,,0.8934553954031944,0.8577185595816559,0.8784179353404037,0.8420939349428392,0.9352891789115414
+logistic_multiclass,optimizer,logistic_gradient_descent,SGDClassifier,{'optimizer': 'gradient_descent'},1.2705,,,,0.7651928320997273,0.619593518225782,0.6724446468720617,0.6133594221947498,
+logistic_multiclass,optimizer,logistic_momentum,MLPClassifier,{'optimizer': 'momentum'},18.9999,,,,0.8047331515387612,0.71381105957255,0.7419087843285137,0.696465387217494,
+logistic_multiclass,optimizer,logistic_adam,MLPClassifier,{'optimizer': 'adam'},5.2639,,,,0.7970393455395404,0.6948372830789946,0.7241665351648311,0.6831266871498806,
+logistic_multiclass,optimizer,logistic_saga,LogisticRegression,{'optimizer': 'saga'},414.912,,,,0.8031749123490456,0.70698521922808,0.7357693454384131,0.6922104320766727,
